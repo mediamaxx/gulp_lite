@@ -1,5 +1,5 @@
 # gulp_lite
-Упрощённая сборка Gulp: concat + rigger + autoprefixer + browser-sync
+Упрощённая сборка Gulp: less + concat + autoprefixer + browser-sync
 
 Список плагинов:
 var   gulp = require('gulp'),
