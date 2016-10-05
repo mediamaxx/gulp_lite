@@ -18,3 +18,12 @@ var   gulp = require('gulp'),
  * src/less/ - 
  * 
  * Собирается проект в папку build
+
+
+Для развертывания проекта запускаем:
+
+git clone https://github.com/mediamaxx/gulp_lite.git
+
+npm i
+
+После установки запускаем gulp watch и открывается новое окно локального сервера в браузере.
