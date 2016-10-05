@@ -11,5 +11,7 @@ var waypoints = $('.content').waypoint(function(direction) {
   		if (direction === "up") 
 		    $(".navbar").removeClass("navbar-fixed-top animated fadeInDownBig");
 		    
-  
+  } , {
+	offset: "50%",
 })
+

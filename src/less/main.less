@@ -5,9 +5,9 @@
 @colorContent: #000; 
 
 body {
-	color: #1a191d;
+	color: #333;
 	font-size: 15px;
-	background: #494a4c url(img/plugin-cover.png) 50% 0% no-repeat;
+	background: #000 url(img/plugin-cover.png) 50% 0% no-repeat;
 	background-blend-mode: multiply;
 	padding: 0px 0 0 0;
 }
@@ -40,20 +40,36 @@ body {
 	border: 0;
 	padding: 5px 0;
 	ul li a {
-		padding: 5px 15px;
-		margin: 10px 0px;
+		padding: 2px 1px;
+		margin: 14px 14px;
 		color: #fff !important;
-		border-radius: 3.5px;
-		}
-		ul li a {
-			color: #000;
-			&:hover {
-				background-color: rgba(255, 255, 255, 0.3) !important; 
-				
+		background-color: none !important; 	
+		background: none !important; 	
+		border-bottom: 1px solid #fff;
+		&:hover {
+			color: @yellow !important;
+			border-color: @yellow;
+			transition: .4s;
 			}
 		}
+	ul li.open a {
+		}
+	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+		border-color: @yellow !important;
+	}
+	ul.dropdown-menu li a {
+		color: #000 !important;
+		padding: 2px 15px;
+		margin: 0;
+		border-radius: 0;
+		&:hover {
+			background-color: rgba(208,182,1,0.6) !important;
+		}
+	}
+
 	ul li.active a {
-		background-color: rgba(208,182,1,0.3) !important; 
+		border-color: @yellow !important; 
+		color: @yellow !important;
 	}
 	.navbar-brand {
 		color: @yellow;
@@ -65,6 +81,7 @@ body {
 		font-family: Raleway;
 		font-size: 26px;
 		font-weight: 500;
+		padding: 6px 0 0 0;
 	}
 }
 .mfp-hide {
@@ -87,7 +104,7 @@ body {
 		font-family: Raleway;
 		padding: 40px 0 40px 0;
 		text-align: center;
-		font-size: 2.9vh; 
+		font-size: 22px; 
 		font-weight: 300;
 		color: #fff;
 		.phone {
@@ -120,6 +137,7 @@ body {
 .footer {
 	color:#fff;
 	padding: 25px;
+	background: #141819;
 }
 
 
